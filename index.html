@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style/style.css" />
+  <link rel="stylesheet" href="assets/style/shortkey.style.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="assets/fontawesome-free-6.7.1-web/css/all.min.css" />
+  <!-- Font Style | Montserrat & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="assets/image/logo/M_World.png" />
+  <title>Mobile Legends World Championship</title>
+</head>
+
+<body class="display-flex flex-dir-column">
+  <header class="display-inline align-items-end">
+    <div class="jumbotron display-flex align-items-end" id="home">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/video/kumpulan_video_skin_m-series_MLBB.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="description display-flex flex-dir-column">
+        <div class="title">
+          <h2 class="accent-text">Where Legends Compete for Glory</h2>
+          <h1>Mobile Legends World Championship</h1>
+        </div>
+        <a href="#about-us"
+          class="btn primary-btn py-4 text-align-center px-2 align-items-center justify-content-center">
+          TEMUKAN PERJALANAN JUARA
+        </a>
+      </div>
+    </div>
+
+
+    <div class="navbar-container display-flex align-items-center justify-content-space-between">
+      <div
+        class="off-menu-list display-flex flex-dir-column justify-content-center align-items-center text-align-center gap-4">
+        <a href="#home" class="nav-underlink-center .active">
+          <h5>Beranda</h5>
+        </a>
+        <a href="#tournament-schedule" class="nav-underlink-center">
+          <h5>ESPORT Roadmap</h5>
+        </a>
+        <a href="#about-us" class="nav-underlink-center">
+          <h5>Tentang Kami</h5>
+        </a>
+        <a href="#contact-us" class="nav-underlink-center">
+          <h5>Kontak Kami</h5>
+        </a>
+      </div>
+      <div class="logo">
+        <img src="assets/image/logo/Logo Mobile Legends New.png" alt="Logo Mobile Legends">
+      </div>
+      <nav class="nav-list">
+        <ul class="m-0 display-flex flex-nowrap overlay-hidden">
+          <li><a href="#home" class="nav-underlink-center .active">Beranda</a></li>
+          <li><a href="#tournament-schedule" class="nav-underlink-center">ESPORT Roadmap</a></li>
+          <li><a href="#about-us" class="nav-underlink-center">Tentang Kami</a></li>
+          <li><a href="#contact-us" class="nav-underlink-center">Kontak Kami</a></li>
+        </ul>
+      </nav>
+      <div class="ham-menu">
+        <span class="width-100 rounded-2"></span>
+        <span class="width-100 rounded-2"></span>
+        <span class="width-100 rounded-2"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-wrapper display-flex flex-wrap flex-dir-column px-6 py-6 gap-6 justify-content-center">
+      <div class="title">
+        <h2 class="accent-text ">MLBB ESPORT ROADMAP</h2>
+        <h5>Jadwal Tournament MLBB Tahun 2025-2026</h5>
+      </div>
+      <div class="tournament-wrapper display-flex flex-wrap gap-3">
+        <article id="tournament-schedule" class="display-flex flex-dir-column flex-wrap">
+          <div
+            class="container-tournament-schedule display-flex flex-dir-row flex-wrap justify-content-space-around gap-4 mb-4 width-100">
+            <!-- Snapdragon Pro Series -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-1" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-1" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/Snapdragon_Pro_Series-Logo.png" alt="Logo Snapdragon Pro Series">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Snapdragon Pro Series Challenge Final</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-1"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-1"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-1" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-1"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-1" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-1"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-1" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-1"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-1" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MPL 1st Half -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-2" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-2" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/MPL-Logo.png" alt="Logo MPL">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">MPL 1st Half</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-2"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-2"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-2" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-2"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-2" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-2"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-2" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-2"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-2" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Snapdragon Pro Series Mobile Masters -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-3" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-3" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/Snapdragon_Pro_Series-Logo.png" alt="Logo Snapdragon Pro Series">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Snapdragon Pro Series Mobile Masters</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-3"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-3"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-3" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-3"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-3" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-3"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-3" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-3"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-3" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Snapdragon Pro Series New Season (1) -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-4" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-4" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/Snapdragon_Pro_Series-Logo.png" alt="Logo Snapdragon Pro Series">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Snapdragon Pro Series New Season (1)</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-4"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-4"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-4" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-4"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-4" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-4"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-4" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-4"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-4" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MLBB Women's Invitatitonal (MWI) -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-5" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-5" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/MWI_Logo.png" alt="Logo MLBB Women's Invitatitonal (MWI)">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">MLBB Women's Invitatitonal (MWI)</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-5"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-5"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-5" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-5"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-5" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-5"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-5" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-5"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-5" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Legends Southeast Asia Cup (MSC) -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-6" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-6" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/MSC-MLBB-2024.png" alt="Logo Mobile Legends Southeast Asia Cup (MSC)">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Mobile Legends Southeast Asia Cup (MSC)</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-6"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-6"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-6" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-6"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-6" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-6"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-6" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-6"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-6" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Snapdragon Pro Series New Season (2) -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-7" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-7" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/Snapdragon_Pro_Series-Logo.png" alt="Logo Snapdragon Pro Series">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Snapdragon Pro Series New Season (2)</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-7"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-7"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-7" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-7"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-7" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-7"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-7" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-7"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-7" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MPL 2nd Half -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-8" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-8" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/MPL-Logo.png" alt="Logo MPL">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">MPL 2nd Half</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-8"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-8"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-8" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-8"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-8" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-8"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-8" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-8"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-8" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEA Games 2025 -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-9" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-9" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/SEA_Games_logo_2025.png" alt="Logo SEA Games 2025">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">SEA Games 2025</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-9"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-9"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-9" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-9"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-9" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-9"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-9" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-9"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-9" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Legends World Championship -->
+            <div
+              class="card card-tournament card-tournament-schedule display-flex flex-wrap flex-dir-column gap-2 rounded-2">
+              <div
+                class="head-card shadow pb-1 rounded-2 display-flex flex-dir-column flex-wrap gap-2 justify-content-center py-3 pb-2 text-align-center width-100">
+                <div id="status-countdown-10" class="tag px-1 py-1 rounded-bb-1">
+                  <p id="countdown-over-10" class="m-0 text-align-center"></p>
+                </div>
+                <div class="tournament-logo">
+                  <figure>
+                    <img src="assets/image/logo/M_World.png" alt="Logo Mobile Legends World Championship">
+                  </figure>
+                </div>
+                <div class="name-tournament overflow-hidden">
+                  <h6 class="">Mobile Legends World Championship</h6>
+                </div>
+              </div>
+              <div class="body-card tournament-countdown rounded-2">
+                <div id="show-countdown-10"
+                  class="show-countdown display-flex flex-dir-row justify-content-space-between px-2 py-2 gap-2 ">
+                  <!-- Hari -->
+                  <div id="days-time-10"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="days-10" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">DD</p>
+                    </div>
+                  </div>
+                  <!-- Jam -->
+                  <div id="hours-time-10"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="hours-10" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">HH</p>
+                    </div>
+                  </div>
+                  <!-- Menit -->
+                  <div id="minutes-time-10"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="minutes-10" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">MM</p>
+                    </div>
+                  </div>
+                  <!-- Detik -->
+                  <div id="seconds-time-10"
+                    class="time-countdown display-flex flex-dir-column justify-content-center rounded-1 flex-1">
+                    <div class="time-show px-2 py-1 rounded-1">
+                      <p id="seconds-10" class="time text-align-center m-0 mb-1">0</p>
+                    </div>
+                    <div class="time-description">
+                      <p class="m-0 text-align-center">SS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="announcement display-flex flex-wrap flex-dir-column gap-2 rounded-2 width-100">
+            <p class="secondary-text fs-2 text-align-left">Beberapa logo yang ditampilkan bukan logo yang terbaru, dan
+              jadwal bersifat perkiraan
+              berdasarkan pengumuman saat event M6 di Kuala Lumpur, Malaysia.</p>
+          </div>
+        </article>
+
+        <aside id="tournament-roadmap-photo"
+          class="tournament-photo shadow white-bg height-fit px-4 py-4 rounded-2 display-flex flex-dir-column justify-content-center flex-wrap gap-2">
+          <div class="title text-align-center">
+            <h6>MLBB ESPORT ROADMAP</h6>
+          </div>
+          <figure class="display-flex flex-dir-column justify-content-center m-0">
+            <img src="assets/image/dokumentasi/Roadmap_Esports_Mobile_Legends_2025_35b0e81e50.jpeg"
+              alt="Roadmap Esports Mobile Legends 2025" class="rounded-1">
+            <figcaption>
+              Roadmap Tournament MLBB 2025 - 2026
+            </figcaption>
+          </figure>
+          <div class="button-action display-flex flex-dir-column flex-wrap justify-content-space-around gap-2">
+            <!-- Tombol Lihat Gambar -->
+            <div
+              class="btn-preview-file width-100 btn primary-btn display-flex flex-dir-row justify-content-space-between py-2 px-1 align-items-center">
+              <a href="assets/image/dokumentasi/Roadmap_Esports_Mobile_Legends_2025_35b0e81e50.jpeg" target="_blank"
+                rel="noopener noreferrer">Lihat Gambar</a>
+              <i class="fa-solid fa-expand"></i>
+            </div>
+
+            <!-- Tombol Download -->
+            <div
+              class="btn-download width-100 btn secondary-btn display-flex flex-dir-row justify-content-space-between py-2 px-1 align-items-center">
+              <a href="assets/image/dokumentasi/Roadmap_Esports_Mobile_Legends_2025_35b0e81e50.jpeg"
+                download>Download</a>
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <article id="about-us">
+      <div class="article-title mb-4">
+        <h2 class="accent-text ">Mobile Legends World Championship</h2>
+        <h3>Prestasi dan Kisah Mendunia</h3>
+      </div>
+      <div class="content display-flex flex-wrap flex-dir-row">
+        <section class="tournament-info">
+          <!-- description -->
+          <div class="tournament-description mb-5">
+            <p class="first-word-uppercase-p">
+              Turnamen Mobile Legends World Camphionship (M-Series) adalah
+              ajang puncak e-sport Mobile Legends yang mempertemukan tim-tim
+              terbaik dari seluruh dunia. Dengan awal yang sederhana pada M1
+              tahun 2019, kompetisi ini telah berkembang menjadi perayaan
+              global untuk penggemar MLBB, menghadirkan aksi seru, hadiah
+              besar, dan intensitas yang terus meningkat setiap tahunnya.
+            </p>
+            <p class="first-word-uppercase-p">
+              Penasaran bagaimana turnamen ini menjadi ikon e-sport dunia?
+              Temukan kisah lengkapnya, mulai dari momen paling epik hingga
+              jejak langkah inovasinya!
+            </p>
+
+          </div>
+          <!-- button -->
+          <a href="https://liquipedia.net/mobilelegends/M_World_Championship" target="_blank"
+            class="btn primary-btn py-4 text-align-center px-2">JELAJAHI KISAHNYA!</a>
+        </section>
+
+        <section class="tournament-photo">
+          <figure>
+            <img class="rounded-2" src="assets/image/dokumentasi/M6.jpg"
+              alt="Dokumentasi Kejuaraan M6 yang dimenangkan oleh Fnatic ONIC PH" />
+            <figcaption>
+              Dokumentasi Kejuaraan M6 yang dimenangkan oleh Fnatic ONIC PH pada tahun 2024
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </article>
+
+    <div class="championship-history px-4">
+      <div class="championship-content">
+        <h3 class="title text-align-center">Kejuaraan M-Series</h3>
+        <div class="slider camphionship-slider mt-2">
+          <div class="list display-flex">
+            <div class="item" style="--position: 1">
+              <img src="assets/image/logo/M1.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M1.jpg" alt="" class="main-image-slider rounded-2">
+            </div>
+            <div class="item" style="--position: 2">
+              <img src="assets/image/logo/M2.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M2.jpg" alt="" class="main-image-slider rounded-2">
+            </div>
+            <div class="item" style="--position: 3">
+              <img src="assets/image/logo/M3.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M3.jpg" alt="" class="main-image-slider rounded-2">
+            </div>
+            <div class="item" style="--position: 4">
+              <img src="assets/image/logo/M4.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M4.jpeg" alt="" class="main-image-slider rounded-2">
+            </div>
+            <div class="item" style="--position: 5">
+              <img src="assets/image/logo/M5.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M5.jpg" alt="" class="main-image-slider rounded-2">
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="assets/image/logo/M5.png" alt="" class="sub-icon-slider">
+              <img src="assets/image/dokumentasi/M6.jpg" alt="" class="main-image-slider rounded-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="contact-us" class="px-6 py-6">
+    <div class="profile-wrapper display-flex flex-dir-column gap-4">
+      <img src="assets/image/dokumentasi/Profil.jpg" alt="" class="rounded-ellipse">
+      <div class="profile-wrapper display-flex flex-dir-column gap-1">
+        <div class="profile">
+          <h4>Adrian Syahputra</h4>
+          <h6 style="font-weight: normal;">UI UX Designer</h6>
+        </div>
+        <div class="medsos display-flex gap-2 fs-3">
+          <!-- Email Icon -->
+          <a href="mailto:lyrdadr.business@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/adriaannsyahhputra" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <!-- Instagram Icon -->
+          <a href="https://www.instagram.com/adriaann.bg?igsh=MWlndmhiZ3dsNGwyMw==" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+  
+          <!-- X (Twitter) Icon -->
+          <a href="https://x.com/adriaann_bg?t=G218jHn9kepqcS7_riG23g&s=09" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="tag">
+        &copy; 2024, Didesain oleh Adrian Syahputra. Semua hak dilindungi.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a3c9597c53.js" crossorigin="anonymous"></script>
+  <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,817 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+
+    color: var(--black-1-color);
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', arial;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-1-color);
+}
+
+a.primary-btn {
+    font-family: 'Montserrat', arial;
+    font-weight: bold;
+}
+
+p,
+a {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption,
+.secondary-text {
+    font-style: italic;
+    text-align: center;
+    color: var(--black-2-color);
+}
+
+.accent-text {
+    background: var(--gold-gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+}
+
+.first-word-uppercase-p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-1-color);
+    padding: 0;
+}
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    color: var(--white-color);
+    height: 100vh;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.jumbotron .description {
+    gap: 1.5rem;
+    z-index: 1;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    height: auto;
+    background-color: transparent;
+    /* Awalnya transparan */
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Border samar */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.navbar-container.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-container nav.nav-list ul {
+    gap: 3rem;
+}
+
+.navbar-container nav.nav-list ul li {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar-container nav.nav-list ul li a {
+    display: block;
+    position: relative;
+
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 4.4rem;
+}
+
+.navbar-container nav.nav-list ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container nav.nav-list ul li a::after {
+    background-color: var(--white-color);
+}
+
+.navbar-container nav.nav-list ul li a:hover::after {
+    transform: scale(1, 1);
+}
+
+.navbar-container .logo {
+    z-index: 3;
+}
+
+.navbar-container .logo img {
+    max-width: 150px;
+    max-height: 45px;
+}
+
+.ham-menu {
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ham-menu span {
+    height: 5px;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease-in-out;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.off-menu-list {
+    background-color: var(--black-1-color);
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    transition: .3s ease-in-out;
+}
+
+.off-menu-list.active {
+    right: 0;
+}
+
+.off-menu-list a {
+    color: var(--white-color);
+    /* Text color for .off-menu-list links */
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.off-menu-list a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--white-color);
+    /* Underline color */
+}
+
+.off-menu-list a:hover::after {
+    transform: scale(1, 1);
+}
+
+.btn {
+    width: fit-content;
+}
+
+.primary-btn {
+    cursor: pointer;
+
+    background: var(--gold-gradient-1);
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: var(--white-color);
+
+    border: 0px;
+    border-radius: 999px;
+}
+
+.primary-btn a {
+    color: var(--white-color);
+}
+
+.primary-btn:hover {
+    border: 1px solid var(--gold-1-color);
+    background: transparent;
+
+    color: var(--gold-1-color);
+}
+
+.primary-btn:hover a {
+    color: var(--gold-1-color);
+}
+
+.secondary-btn {
+    cursor: pointer;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: var(--black-1-color);
+
+    border: 1px solid var(--black-2-color);
+    border-radius: 999px;
+}
+
+.secondary-btn a {
+    color: var(--black-1-color);
+}
+
+.secondary-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
+
+    color: var(--black-1-color);
+}
+
+.secondary-btn:hover a {
+    color: var(--black-1-color);
+}
+
+.jumbotron .primary-btn:hover {
+    border-color: var(--white-color);
+    background: transparent;
+
+    color: var(--white-color);
+}
+
+.jumbotron,
+main article#about-us {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+main .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+aside {
+    min-width: 280px;
+}
+
+aside figure img {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+main #about-us .content section.tournament-photo {
+    width: 40%;
+    order: 2;
+}
+
+main #about-us .content section.tournament-photo img {
+    width: 100%;
+}
+
+main #about-us .content section.tournament-info {
+    width: 60%;
+    padding-right: 1rem;
+    order: 1;
+}
+
+article#tournament-schedule {
+    flex: 3;
+}
+
+aside#tournament-roadmap-photo {
+    flex: 1;
+}
+
+aside .button-action {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+aside .button-action btn {
+    min-width: 150px;
+}
+
+.tournament-countdown {
+    font-family: 'Orbitron';
+    font-weight: bold;
+    background-color: var(--black-1-color);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tournament-logo {
+    width: 100%;
+    height: 150px;
+}
+
+.championship-history,
+.content-wrapper {
+    background: var(--blue-transparent-color);
+}
+
+.tournament-logo img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.card-tournament {
+    width: 280px;
+}
+
+.head-card {
+    background-color: var(--white-color);
+}
+
+.card-tournament .name-tournament {
+    height: 58px;
+}
+
+.time-countdown {
+    color: var(--white-color);
+}
+
+.time-show {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #555;
+}
+
+footer {
+    background: var(--black-1-color);
+    color: var(--white-color);
+}
+
+footer a {
+    color: var(--white-color);
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Slider */
+
+.slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    /* mask-image: linear-gradient(to right, transparent, var(--black-1-color) 10% 90%, transparent); */
+}
+
+.camphionship-slider {
+    --width: 300px;
+    --height: 180px;
+    --quantity: 6;
+}
+
+.slider .list {
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 20s linear infinite;
+    animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1));
+}
+
+.slider .list .item img.main-image-slider {
+    max-height: 100%;
+}
+
+img.sub-icon-slider {
+    position: absolute;
+    margin: 0.3rem;
+    max-height: calc(25/100 * var(--height));
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%
+    }
+
+    to {
+        left: calc(var(--width) * -1.5);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+    
+    h6 {
+        font-size: 0.9rem;
+    }
+    
+    p,
+    a {
+        font-size: 1rem;
+    }
+    
+    .tournament-wrapper {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .jumbotron .description,
+    .card-tournament,
+    main article#about-us .content,
+    main #about-us .content section.tournament-photo,
+    main #about-us .content section.tournament-photo img,
+    main #about-us .content section.tournament-info {
+        width: 100%;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos {
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos img {
+        height: 50px;
+    }
+    
+    .navbar-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .navbar-container nav.nav-list {
+        display: none;
+    }
+    
+    main #about-us .content {
+        flex-direction: column;
+    }
+    
+    main #about-us .content section.tournament-photo {
+        order: 1;
+    }
+    
+    main #about-us .content section.tournament-info {
+        padding: 0;
+        order: 2;
+    }
+
+    aside .button-action {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+    }
+
+    p,
+    a {
+        font-size: 1.1rem;
+    }
+
+    .tournament-wrapper {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .jumbotron .description,
+    main article#about-us .content,
+    main #about-us .content section.tournament-photo,
+    main #about-us .content section.tournament-photo img,
+    main #about-us .content section.tournament-info {
+        width: 100%;
+    }
+    
+    .card-tournament {
+        max-width: 50%;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos {
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos img {
+        height: 50px;
+    }
+    
+    .navbar-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .navbar-container nav.nav-list {
+        display: none;
+    }
+    
+    main #about-us .content {
+        flex-direction: column;
+    }
+    
+    main #about-us .content section.tournament-photo {
+        order: 1;
+    }
+    
+    main #about-us .content section.tournament-info {
+        padding: 0;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    a {
+        font-size: 1.15rem;
+    }
+
+    .tournament-wrapper {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .jumbotron .description,
+    main article#about-us .content,
+    main #about-us .content section.tournament-photo,
+    main #about-us .content section.tournament-photo img,
+    main #about-us .content section.tournament-info {
+        width: 100%;
+    }
+
+    .card-tournament {
+        max-width: 50%;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos {
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    main #about-us .content section.tournament-info .tournament-logos img {
+        height: 50px;
+    }
+    
+    .navbar-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .navbar-container nav.nav-list {
+        display: none;
+    }
+    
+    main #about-us .content {
+        flex-direction: column;
+    }
+    
+    main #about-us .content section.tournament-photo {
+        order: 1;
+    }
+    
+    main #about-us .content section.tournament-info {
+        padding: 0;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    a {
+        font-size: 1.2rem;
+    }
+
+    .tournament-wrapper {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    aside .button-action {
+        flex-direction: column;
+    }
+}
